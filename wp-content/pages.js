@@ -2,7 +2,7 @@
 
     if (!authenticated) {
         // Redirect back to login.html if not authenticated
-        window.location.href = "login.html";
+       // window.location.href = "login.html";
     }
 
     function copyCommandsToClipboard() {
