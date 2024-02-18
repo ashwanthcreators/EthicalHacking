@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png"   type="image/x-icon" />
+    <link rel="stylesheet" href="pages.css">
+    <title>OSINTGRAM</title>
+   
+<body>
+    <nav>
+    <a href="home.html" style="font-size: 30px;"> <h2 class="abc"> CODE SAFEGUARD</h2></a>
+    <a href="osintgram.html"><ul><li>OSINTGRAM</li></a></ul><br>
+</nav>
+    <p>
+        
+       
+        <img src="https://opengraph.githubassets.com/4599517e73b9debc5624e4f94ca5f99f829e9ab77d9e814e6e835f68421ada3c/Datalux/Osintgram" alt="" height="400" width="800">
+     
+        <div class="custom-box1">
+            <p class="ab"> <br> Requirements :<br></p>
+          <p class="bcd">   <br>Kali Linux <br>
+           <br>Internet <br></p>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_lqqntIyByo?si=vVuyBVIvSZuIX2lV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+     <br>
+
+     <div class="custom-box">
+        <b class="bc">  <br><br>COMMANDS <br></b><br><br>
+        <div class="button-container">
+            <button class="copy-button" onclick="copyCommandsToClipboard()">Copy Commands</button>
+        </div><br>
+        
+ 
+       <i> <br>Download Osintgram<br> </i>
+         
+        <pre class="command">  <br> git clone https://github.com/Datalux/Osintgram.git<br></pre>
+        <i> <br>  Make sure you have Python 3.6+ and pip3 Installed<br></i>
+        <pre class="command">
+         <br>  sudo apt install python3<br>
+         <br> sudo apt install python3-pip<br></pre>
+         <i><br>  Install requirements (make sure you are in the Osintgram directory)<br></i>
+          
+        <pre class="command"> <br>  pip3 install -r requirements.txt<br></pre>
+ 
+        <i>  <br>  Create Login Info<br>  </i>
+ 
+       <pre class="command">  <br>mkdir config<br>
+         <br>cd config <br>
+         <br>  echo "username" > username.conf<br>
+         <br>echo "password" > pw.conf<br>
+         <br>echo "{}" > settings.json<br></pre>
+        <i> <br> Start Exploring (make sure you are back in the Osintgram directory)<br></i>
+          <pre class="command"><br>cd .. <br>
+         <br> python3 main.py instagram_target<br></pre>
+      <i>   <br>Now you will find a error like this (Error: "username" field cannot be blank in "config/credentials.ini") <br>
+         <br>Follow these steps to fix the error <br></i>
+       <pre class="command">  <br>cd config <br>
+         <br>nano credentials.ini <br></pre>
+      <i>   <br>there you will username and password <br>
+         <br>write your username and password next to = without gap <br>
+         <br>save it by using this command ctrl+s <br>
+         <br>exit by typing ctrl+x <br>
+         <br>next typing (cd..) <br>
+         <br> Start Hacking (make sure you are back in the Osintgram directory)<br></i>
+        <pre class="command"> <br>python3 main.py instagram_target <br></pre>
+       
+        
+ 
+        </div>
+
+
+
+
+
+</div>
+
+<script src="pages.js">
+</script>
+
+
+
+
+</body>
+</html>
