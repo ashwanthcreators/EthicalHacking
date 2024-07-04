@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png"   type="image/x-icon" />
+    <link rel="stylesheet" href="pages.css">
+    <title>TWINT</title>
+ 
+<body>
+  <div class="container">
+    <nav>
+        <a href="home.html" style="font-size: 30px;"> <h2 class="abc"> CODE SAFEGUARD</h2></a>
+        <a href="twint.html"><ul><li>TWINT</li></a></ul><br>
+    </nav>
+    
+    <br><br>
+        
+        <br><img src="https://opengraph.githubassets.com/df568ab58959d694488ab0471404529bf62a345249c8c47ed5ba282a81977a13/twintproject/twint" alt="" width="800" height="400">
+       
+        <div class="custom-box">
+          <p class="ab"> <br> Requirements :<br></p>
+        <p class="bcd">   <br>Kali Linux <br>
+         <br>Internet <br></p>
+         <p class="ab"><br>CREDITS : <br></p>
+         <p class="bcd">NetworkChuck</p>
+          </div><br>
+       
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SvO_FDa8AIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <div class="custom-box">
+          <b class="bc">  <br><br>COMMANDS <br></b><br><br>
+          <div class="button-container">
+              <button class="copy-button" onclick="copyCommandsToClipboard()">Copy Commands</button>
+          </div><br>
+        <i><br> Install Twint <br></i>
+      <pre class="command">  <br> apt install python3<br>
+       <br>apt install git<br>
+       <br>apt install python3-pip<br></pre>
+
+       <i><br>  Twint<br></i>
+     <pre class="command">  
+       <br>   git clone --depth=1 https://github.com/twintproject/twint.git <br>  
+       <br>    cd twint <br>  
+       <br>   pip3 install . -r requirements.txt<br>  </pre>
+        
+        <i>
+       <br>  Twint CLI<br> </i>
+
+       <br> <i>   See all tweets for Networkchuck<br>  </i> 
+       <pre class="command">  <br>  twint -u networkchuck<br> </pre>
+       
+       
+       <br>  <i>  Get help<br>   </i> 
+       <pre class="command"> <br>   twint -h<br> </pre>
+        
+        
+
+       <br> <i>     See the last 20 NetworkChuck tweets<br>   </i> 
+      <pre class="command"> <br>  twint -u networkchuck --limit 20<br>  </pre>
+
+
+
+       <br> <i>     Search for "Raspberry Pi" in NetworkChuck's tweets<br>   </i> 
+      <pre class="command">  <br>  twint -u networkchuck -s "raspberry pi" --limit 20<br>  </pre>
+
+
+       <br> <i>    Search for "Right Now" in NetworkChuck's tweets and output to a file<br>   </i> 
+       <pre class="command"> <br>  twint -u networkchuck -s "right now" --o rightnow.json --json<br>  </pre>
+
+
+       <br>  <i>   See David Bombal's most popular tweets <br>   </i> 
+    <pre class="command"> <br>   twint -u davidbombal --min-likes 100<br>  </pre>
+
+
+
+       <br><i>    See David Bombal's tweets for today<br>   </i> 
+      <pre class="command">  <br>  twint -u davidbombal --since 2021-04-28<br>  </pre>
+
+
+
+       <br> <i>    See David Bombal's tweets in 2016<br>   </i> 
+       <pre class="command"> <br>  twint -u davidbombal --year 2016<br>  </pre>
+
+
+       <br>  <i>   See David Bombal's tweets with images in 2016<br>   </i> 
+      <pre class="command">  <br>  twint -u davidbombal --year 2016 --images<br>  </pre>
+
+       <br>  <i>    See all tweets with "coffee" near Dallas, today, with at least 15 likes<br>   </i> 
+        <pre class="command"><br>  twint -s coffee --near dallas --since 2021-04-28 --min-likes 15<br>  </pre>
+
+       <br>  <i>    See all tweets with "raspberry pi" near Paris, today.<br>   </i> 
+         <pre class="command"><br>    twint -s "raspberry pi" --near Paris --since 2021-04-28<br>  </pre>
+
+
+       <br>  <i>   See all tweets with "raspberry pi", today, near cooridinates<br>   </i> 
+        <pre class="command"> <br>  twint -s "raspberry pi" --since 2021-04-28 -g="cooridinates,radius"<br>  </pre>
+
+     
+
+
+  </div>
+</div>
+
+
+        <script src="pages.js">
+          
+      </script>
+        </div>   
+</body>
+</html>

