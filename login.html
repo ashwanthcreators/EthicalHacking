@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+  
+</head>
+<body>
+    
+    <img src="banner.png" alt="home.jpg" width="700" height="200"><br><br><br>
+    <h2 class="ab">Login Portal</h2><br>
+    <form id="loginForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required onkeydown="moveToPassword(event)">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required onkeydown="checkEnter(event)">
+        <br>
+       
+        
+        <button type="submit" id="loginButton">Login</button><br>
+        <label for="">By Logging In <br> I accept the <a href="policies.html" target="_blank">Privacy and Policy</a> </label>
+        <br>
+    </form>
+    <br><br><br>
+    <br><br><br>
+    <hr>
+    <p class="a">Follow us in social media </p>
+    <br><br><br>
+    <a href="https://www.facebook.com/ashwanthhacker15" target="_blank" id="class"><img src="https://cliply.co/wp-content/uploads/2019/07/371907490_FACEBOOK_ICON_TRANSPARENT_400.gif" alt="" width="100" height="100"></a>
+    <a href="https://github.com/ashwanthcreators/EthicalHacking" target="_blank" id="class"><img src="https://media1.tenor.com/m/A15H8E1VUh8AAAAC/github-cat.gif" alt="" class="img" width="100" height="100"></a>
+    <a href="https://www.youtube.com/channel/UCYujGFwVKJbiweT0kd6CwLg" target="_blank" id="class"><img src="https://cliply.co/wp-content/uploads/2019/07/371907120_YOUTUBE_ICON_TRANSPARENT_400.gif" alt="" width="100" height="100"></a>
+    <a href="https://linktr.ee/EthicalHacking" target="_blank" id="class"><img src="https://media0.giphy.com/media/X2lEU1vOaoeQtYnXQO/200.gif" alt="" width="100" height="100"></a>
+<a href="https://instagram.com/codesafeguard" target="_blank" id="class"><img src="https://static.wixstatic.com/media/f5e5e5_108e7431dbcf4ff282f7d2e10fb788b4~mv2.gif" width="100" height="100" class="img" alt=""></a>
+    <script src="login.js"></script>
+</body>
+</html>

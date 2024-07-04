@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url(login.png);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+.img{
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.ab, .a, .bc {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    form {
+        width: 400px;
+    }
+
+    a img {
+        width: 80px;
+        height: 80px;
+    }
+}

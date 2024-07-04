@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="shortcut icon" href="logo.png"   type="image/x-icon" />
+    <title>Linux Installation</title>
+  
+</head>
+<body>
+
+
+
+  <div class="container">
+    <nav>
+      <a href="home.html" style="font-size: 30px;">
+          <h2 class="abc">CODE SAFEGUARD</h2>
+      </a>
+      <a href="linuxinstallation.html">
+          <ul>
+              <li>LINUX Installation/li>
+          </ul>
+      </a>
+  </nav><br>
+
+    
+
+      <br><br><br>  <img src="9.jpg" alt="" width="800" height="400"><br><br>
+
+      
+        
+        <div class="custom-box">
+            <p class="ab"> <br> Requirements :<br></p>
+          <p class="bcd">   <br>WINDOWS MACHINE <br>
+           <br>INTERNET <br>
+            </div><br><br>
+
+
+
+
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2tQnRvXUpf4?si=i36W8of1QorHeYao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+           
+           
+           
+
+
+
+
+
+            <div class="custom-box">
+
+                <b class="bc">  <br><br>COMMANDS <br></b><br><br>
+        <div class="button-container">
+            <button class="copy-button" onclick="copyCommandsToClipboard()">Copy Commands</button>
+        </div><br>
+       
+           
+                
+          <b>
+                   
+           
+           
+
+
+
+            <i>
+       
+       <br>     RUN POWERSHELL as administrator<br>
+       <br>    INSTALL WSL 2 BY FOLLOWING COMMANDS<br></i>
+  
+        <pre class="command"></pre>
+       <br> Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux<br></pre>
+        <i>
+       <br> RESTART YOUR COMPUTER OR LAPTOP AND WRITE FOLLOWWING COMMANDS<br></i>
+      <pre class="command"> 
+       <br>  dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart<br>
+        
+       <br>   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart<br></pre>
+        
+      <i> <br>  RESTART YOUR MACHINE AGAIN , VISIT THIS WEBSITE<br></i>
+        
+       <i><br>Download Linux Kernel: https://aka.ms/wsl2kernel<br>
+        
+        
+       <br> AFTER INSTALL OF THE TOOL ABOVE <br>
+        
+       <br>  INSTALL KALI LINUX FROM MICROSOFT STORE <br>
+        
+       <br>CHECK THE VERSION WITH POWERSHELL <br>
+        
+       <br> CHECK VERSION CMD<br></i>
+     <pre class="command"> <br>   wsl --list --verbose<br></pre> 
+        
+      <i> <br> AFTER INSTALL CREATE USERNAME AND PASSWORD <br>
+       <br>2. INSTALL GUI<br></i>
+        
+       <pre class="command"><br> sudo apt update && sudo apt upgrade -y<br>
+        
+       <br> sudo apt install kali-desktop-xfce -y<br>
+        
+       <br> XRDP<br>
+        
+       <br> sudo apt install xrdp -y<br>
+        
+       <br>  sudo service xrdp start<br></pre>
+
+</div>
+</div>
+</div>
+       <script src="pages.js"></script>
+    
+</body>
+</html>

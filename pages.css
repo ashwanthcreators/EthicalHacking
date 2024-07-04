@@ -1,0 +1,233 @@
+body {
+    background: url(home.jpg);
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+    font-size: 45px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    color: rgb(251, 255, 0);
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+u {
+    color: rgb(208, 255, 0);
+    font-size: 35px;
+    text-align: center;
+}
+
+b {
+    color: rgb(250, 255, 253);
+    font-size: 35px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+i {
+    color: yellow;
+    font-size: 20px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hp {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: burlywood;
+}
+
+.ab {
+    color: aqua;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bc {
+    color: greenyellow;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.cd {
+    color: greenyellow;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+.ab {
+    color: greenyellow;
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.abc {
+    color: white;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+.de {
+    color: blue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 990px;
+        margin: 0 auto;
+    }
+}
+
+nav {
+    height: 100px;
+    background-color: rgb(135, 235, 165);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
+}
+
+ul {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+    text-shadow: 5px 5px 5px #ffffff;
+}
+
+.custom-box {
+    
+    border: 2px solid white;
+    padding: 20px;
+    margin: 25px auto;
+    width: 600px; /* Example width; adjust as needed */
+    max-width: 100%;
+    color: white;
+    background-color: black;
+    box-shadow: 20px 20px 10px #888888;
+    text-align: center; /* Center-align text */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow: auto; /* Adjust overflow behavior as needed */
+    font-size: 18px;
+}
+
+.custom-box1 {
+    border: 2px solid white;
+    padding: 20px;
+    margin: 25px auto;
+   
+    
+    color: white;
+    background-color: black;
+    box-shadow: 20px 20px 10px #888888;
+    text-align: center; /* Center-align text */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow: auto; /* Adjust overflow behavior as needed */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+/* Responsive styles for custom boxes */
+@media (max-width: 600px) {
+    .custom-box {
+        margin: 10px;
+        width: 90%;
+    }
+    .custom-box1 {
+        margin: 10px;
+        width: 90%;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .custom-box {
+        margin: 20px;
+        width: 90%;
+    }
+    .custom-box1 {
+        margin: 20px;
+        width: 50%;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1025px) {
+    .custom-box {
+        margin: 25px;
+        width: 90%;
+    }
+    .custom-box1 {
+        margin: 30px;
+        width: 40%;
+        
+    }
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+.command {
+    white-space: pre-wrap;
+    font-size: 20px;
+    text-align: center;
+}
+
+.copy-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.copy-button:hover {
+    background-color: #45a049;
+}
+
+.button-container {
+    margin-left: auto;
+}
+
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: red;
+}
